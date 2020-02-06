@@ -1,0 +1,6 @@
+framework module Pods_AnimLover {
+  umbrella header "Pods-AnimLover-umbrella.h"
+
+  export *
+  module * { export * }
+}

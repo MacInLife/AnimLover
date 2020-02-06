@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SQl-Nl-FY4">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMp-pi-DwF" userLabel="Poster View" customClass="PosterView" customModule="AnimLover" customModuleProvider="target">
+                                <rect key="frame" x="20" y="196" width="374" height="586"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Jx-Oj-RfO">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="586"/>
+                                    </imageView>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igm-34-Rs6" userLabel="Filter View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="586"/>
+                                        <color key="backgroundColor" name="ALBlack"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Année" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQj-d2-5VK">
+                                        <rect key="frame" x="20" y="502" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9x-Pw-OHU">
+                                        <rect key="frame" x="20" y="468" width="334" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstItem="igm-34-Rs6" firstAttribute="leading" secondItem="cMp-pi-DwF" secondAttribute="leading" id="31m-AL-eUr"/>
+                                    <constraint firstAttribute="trailing" secondItem="BQj-d2-5VK" secondAttribute="trailing" constant="20" id="4Ir-Uc-jUR"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Jx-Oj-RfO" secondAttribute="bottom" id="524-0w-lCd"/>
+                                    <constraint firstAttribute="height" constant="586" id="9x6-Jz-hyx"/>
+                                    <constraint firstItem="igm-34-Rs6" firstAttribute="top" secondItem="cMp-pi-DwF" secondAttribute="top" id="BZ7-aN-9es"/>
+                                    <constraint firstAttribute="bottom" secondItem="BQj-d2-5VK" secondAttribute="bottom" constant="60" id="JwC-Gm-7dN"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Jx-Oj-RfO" secondAttribute="trailing" id="QuC-GT-zMi"/>
+                                    <constraint firstAttribute="bottom" secondItem="igm-34-Rs6" secondAttribute="bottom" id="Vbb-4Z-clj"/>
+                                    <constraint firstItem="7Jx-Oj-RfO" firstAttribute="leading" secondItem="cMp-pi-DwF" secondAttribute="leading" id="WBf-dd-j8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="V9x-Pw-OHU" secondAttribute="trailing" constant="20" id="Yyh-YQ-DjL"/>
+                                    <constraint firstAttribute="width" constant="374" id="Z0O-17-vvJ"/>
+                                    <constraint firstItem="7Jx-Oj-RfO" firstAttribute="top" secondItem="cMp-pi-DwF" secondAttribute="top" id="amE-QA-0c0"/>
+                                    <constraint firstAttribute="trailing" secondItem="igm-34-Rs6" secondAttribute="trailing" id="cEn-7b-xLb"/>
+                                    <constraint firstItem="BQj-d2-5VK" firstAttribute="top" secondItem="V9x-Pw-OHU" secondAttribute="bottom" constant="10" id="cPL-70-jdG"/>
+                                    <constraint firstItem="V9x-Pw-OHU" firstAttribute="leading" secondItem="cMp-pi-DwF" secondAttribute="leading" constant="20" id="fM8-hP-YCg"/>
+                                    <constraint firstItem="BQj-d2-5VK" firstAttribute="leading" secondItem="cMp-pi-DwF" secondAttribute="leading" constant="20" id="ynk-0X-aSl"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="filterView" destination="igm-34-Rs6" id="RFF-16-Gdu"/>
+                                    <outlet property="imageView" destination="7Jx-Oj-RfO" id="hj9-j7-ZQE"/>
+                                    <outlet property="movieTitleLabel" destination="V9x-Pw-OHU" id="vn7-Hq-ild"/>
+                                    <outlet property="releaseYear" destination="BQj-d2-5VK" id="oDP-Gn-QxW"/>
+                                    <outletCollection property="gestureRecognizers" destination="XTd-lq-tTo" appends="YES" id="wke-A3-aUe"/>
+                                </connections>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="LmP-ql-DJc">
+                                <rect key="frame" x="162" y="64" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="DxZ-W4-pBZ"/>
+                                    <constraint firstAttribute="width" constant="90" id="gR7-6N-E3B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe the poster to the left or right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-Px-7dq">
+                                <rect key="frame" x="20" y="821" width="374" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LmP-ql-DJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hg-As-5AM"/>
+                            <constraint firstItem="LmP-ql-DJc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8HZ-Wa-tW5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tGX-Px-7dq" secondAttribute="bottom" constant="20" id="BDk-6D-x5a"/>
+                            <constraint firstItem="cMp-pi-DwF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-80" id="Emm-rI-YFc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGX-Px-7dq" secondAttribute="trailing" constant="20" id="SQF-IM-8SO"/>
+                            <constraint firstItem="cMp-pi-DwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLG-qb-0hl"/>
+                            <constraint firstItem="tGX-Px-7dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zgB-hQ-xBg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lvc-pr-ymr"/>
+                    <connections>
+                        <outlet property="posterView" destination="cMp-pi-DwF" id="iMN-US-ixx"/>
+                        <segue destination="i8I-Ia-c4I" kind="show" identifier="toContinuation" id="xn8-f5-Nrt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XTd-lq-tTo">
+                    <connections>
+                        <action selector="dragPosterView:" destination="BYZ-38-t0r" id="uhy-4p-bjH"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1044.9275362318842" y="77.678571428571431"/>
+        </scene>
+        <!--Continuation View Controller-->
+        <scene sceneID="I73-fO-UJh">
+            <objects>
+                <viewController id="i8I-Ia-c4I" customClass="ContinuationViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLA-4V-TAv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="1rH-dY-OeR">
+                                <rect key="frame" x="101" y="64" width="213" height="213"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mes Favoris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOq-0u-6UD">
+                                <rect key="frame" x="143" y="303" width="129" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKV-Cj-pHI">
+                                <rect key="frame" x="185" y="366" width="44" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QR-tn-ZnX">
+                                <rect key="frame" x="185" y="419" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3f9-vs-Wln">
+                                <rect key="frame" x="185" y="472" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-Fy-AkW">
+                                <rect key="frame" x="185" y="531" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-e3-R6z">
+                                <rect key="frame" x="185" y="589" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 7" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTQ-Tr-LWs">
+                                <rect key="frame" x="183" y="676" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Frm-r9-Cy8">
+                                <rect key="frame" x="183" y="728" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkA-Da-rHj">
+                                <rect key="frame" x="185" y="769" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-uO-8Oh">
+                                <rect key="frame" x="183" y="810" width="54" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Film 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dn-5C-Je0">
+                                <rect key="frame" x="183" y="630" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="o6V-Gu-TuU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lKh-5E-Mh3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXv-KK-tkA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.1159420289857" y="77.678571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aCr-xd-cCL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="SQl-Nl-FY4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hKO-RQ-Qyv">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="37Z-Sr-wUD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kao-ZA-VPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.78260869565219" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_AnimLover" width="1160" height="1061.3333740234375"/>
+        <namedColor name="ALBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

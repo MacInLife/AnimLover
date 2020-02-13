@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400227E23F536D600AACA22 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400227D23F536D600AACA22 /* ContactViewController.swift */; };
+		0400228023F5502400AACA22 /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400227F23F5502400AACA22 /* CreditsViewController.swift */; };
+		044D1AC423EBFE90000A3679 /* MovieTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D1AC323EBFE90000A3679 /* MovieTestCase.swift */; };
 		0461706E23D993820094C823 /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461706D23D993820094C823 /* PosterView.swift */; };
 		0461707023D99ED30094C823 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461706F23D99ED30094C823 /* Colors.swift */; };
 		04AE906523A2316600D80040 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE906423A2316600D80040 /* MovieService.swift */; };
@@ -17,7 +20,7 @@
 		04C305CE238FDEB30040190A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CC238FDEB30040190A /* Main.storyboard */; };
 		04C305D0238FDEBB0040190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CF238FDEBB0040190A /* Assets.xcassets */; };
 		04C305D3238FDEBB0040190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305D1238FDEBB0040190A /* LaunchScreen.storyboard */; };
-		04F27E9F23E32E1D00525EE7 /* ContinuationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27E9E23E32E1D00525EE7 /* ContinuationViewController.swift */; };
+		04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */; };
 		04F4E63C23C717ED009B0695 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E63B23C717ED009B0695 /* Choice.swift */; };
 		F90BCD404A34A354FE7647B7 /* Pods_AnimLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */; };
 /* End PBXBuildFile section */
@@ -33,8 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0400227D23F536D600AACA22 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		0400227F23F5502400AACA22 /* CreditsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		044D1AB923EBFACF000A3679 /* AnimLoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimLoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044D1ABD23EBFACF000A3679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044D1AC323EBFE90000A3679 /* MovieTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestCase.swift; sourceTree = "<group>"; };
 		0461706D23D993820094C823 /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
 		0461706F23D99ED30094C823 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		04AE906423A2316600D80040 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
@@ -47,7 +53,7 @@
 		04C305CF238FDEBB0040190A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C305D2238FDEBB0040190A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C305D4238FDEBB0040190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04F27E9E23E32E1D00525EE7 /* ContinuationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuationViewController.swift; sourceTree = "<group>"; };
+		04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		04F4E63B23C717ED009B0695 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		44705F93D68BD7DB8804C2B5 /* Pods-AnimLover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimLover.release.xcconfig"; path = "Target Support Files/Pods-AnimLover/Pods-AnimLover.release.xcconfig"; sourceTree = "<group>"; };
 		A0E60E58B473F1554CBA85E7 /* Pods-AnimLover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimLover.debug.xcconfig"; path = "Target Support Files/Pods-AnimLover/Pods-AnimLover.debug.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				044D1ABD23EBFACF000A3679 /* Info.plist */,
+				044D1AC323EBFE90000A3679 /* MovieTestCase.swift */,
 			);
 			path = AnimLoverTests;
 			sourceTree = "<group>";
@@ -98,7 +105,9 @@
 			isa = PBXGroup;
 			children = (
 				04C305CA238FDEB30040190A /* ViewController.swift */,
-				04F27E9E23E32E1D00525EE7 /* ContinuationViewController.swift */,
+				04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */,
+				0400227D23F536D600AACA22 /* ContactViewController.swift */,
+				0400227F23F5502400AACA22 /* CreditsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,6 +231,7 @@
 				TargetAttributes = {
 					044D1AB823EBFACF000A3679 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 04C305C2238FDEB30040190A;
 					};
 					04C305C2238FDEB30040190A = {
@@ -315,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044D1AC423EBFE90000A3679 /* MovieTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,13 +335,15 @@
 			files = (
 				04F4E63C23C717ED009B0695 /* Choice.swift in Sources */,
 				0461707023D99ED30094C823 /* Colors.swift in Sources */,
-				04F27E9F23E32E1D00525EE7 /* ContinuationViewController.swift in Sources */,
+				04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */,
+				0400228023F5502400AACA22 /* CreditsViewController.swift in Sources */,
 				04C305CB238FDEB30040190A /* ViewController.swift in Sources */,
 				04C305C7238FDEB30040190A /* AppDelegate.swift in Sources */,
 				04AE906523A2316600D80040 /* MovieService.swift in Sources */,
 				04C305C9238FDEB30040190A /* SceneDelegate.swift in Sources */,
 				0461706E23D993820094C823 /* PosterView.swift in Sources */,
 				04AE906723A23DF400D80040 /* Movie.swift in Sources */,
+				0400227E23F536D600AACA22 /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +381,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29H6X27A9A;
 				INFOPLIST_FILE = AnimLoverTests/Info.plist;
@@ -379,6 +393,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = fr.macoco.AnimLoverTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimLover.app/AnimLover";
@@ -389,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29H6X27A9A;
 				INFOPLIST_FILE = AnimLoverTests/Info.plist;

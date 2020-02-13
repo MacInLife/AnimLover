@@ -142,7 +142,7 @@ class ViewController: UIViewController {
                      posterView.movieTitleLabel.text = choice.currentMovie.title
                      posterView.releaseYear.text = choice.currentMovie.releaseYear
                  case .over:
-                    performSegue(withIdentifier: "toContinuation", sender: nil)
+                    performSegue(withIdentifier: "toResult", sender: nil)
                      posterView.poster = Data()
                      posterView.movieTitleLabel.text = ""
                      posterView.releaseYear.text = ""

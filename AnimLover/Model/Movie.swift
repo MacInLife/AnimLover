@@ -32,5 +32,9 @@ class Movie {
     
     func setLike(with userChoice: Bool) {
         isLiked = userChoice
+        
+        if userChoice == true{
+                       print(title)
+               }
     }
 }

@@ -63,7 +63,11 @@ class Choice {
     func finish(){
         state = .over
         
+        let likedMovies = discoverMovies.filter{ $0.isLiked == true }
+        
         //Logique métier déterminant le choix
+        NotificationCenter.default.post(name: .likedMoviesLoaded, object: self, userInfo: ["likedMovies" : likedMovies])
+       
     }
     private func goToNextMovie(){
         currentIndex < discoverMovies.count - 1 ? currentIndex += 1 : finish()
@@ -78,4 +82,5 @@ extension Notification.Name {
     static let discoverMoviesLoaded = Notification.Name("La découverte des films est en cours de chargement")
     static let errorUndefined = Notification.Name("Erreur indéfini")
     static let errorConnection = Notification.Name("Erreur de connection")
+    static let likedMoviesLoaded = Notification.Name("Erreur de chargement des movies aimés")
 }

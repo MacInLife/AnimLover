@@ -9,14 +9,16 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    var movies: [Movie]!
+    @IBOutlet weak var TableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //print(movies)
+        //print()
         // Do any additional setup after loading the view.
     }
     
-
+ 
     /*
     // MARK: - Navigation
 
@@ -28,3 +30,17 @@ class ResultViewController: UIViewController {
     */
 
 }
+extension ResultViewController: UITableViewDataSource {
+     func numberOfSections(in tableView: UITableView) -> Int {
+         return 1
+     }
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return movies.count
+     }
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+         let movie = movies[indexPath.row]
+         cell.textLabel?.text = movie.title
+         return cell
+     }
+ }

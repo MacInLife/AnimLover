@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     
     
     var choice = Choice()
+    private var likedMovies = [Movie]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,21 @@ class ViewController: UIViewController {
             #selector(discoverMoviesLoaded), name:
             Notification.Name.discoverMoviesLoaded, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector:
+            #selector(likedMoviesLoaded( _:)), name:
+            Notification.Name.likedMoviesLoaded, object: nil)
+        
         choice.start()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "toResult" else { return }
+//        let resultVC = segue.destination as! ResultViewController
+//        resultVC.movies = likedMovies
+        
+        let tabVC = segue.destination as! UITabBarController
+        let resultVC = tabVC.viewControllers![0] as! ResultViewController
+        resultVC.movies = likedMovies
     }
 
     @objc func discoverMoviesLoaded() {
@@ -55,6 +70,12 @@ class ViewController: UIViewController {
         posterView.title = choice.currentMovie.title
         posterView.year = choice.currentMovie.releaseYear
     }
+    
+    @objc func likedMoviesLoaded(_ notification: NSNotification) {
+        guard let movies = notification.userInfo?["likedMovies"] as? [Movie] else { return }
+        likedMovies = movies
+        performSegue(withIdentifier: "toResult", sender: nil)
+      }
     
     private func transformPosterViewWith(gesture: UIPanGestureRecognizer){
     // 1.0 Création du déplacement
@@ -142,7 +163,7 @@ class ViewController: UIViewController {
                      posterView.movieTitleLabel.text = choice.currentMovie.title
                      posterView.releaseYear.text = choice.currentMovie.releaseYear
                  case .over:
-                    performSegue(withIdentifier: "toResult", sender: nil)
+                    //performSegue(withIdentifier: "toResult", sender: nil)
                      posterView.poster = Data()
                      posterView.movieTitleLabel.text = ""
                      posterView.releaseYear.text = ""

@@ -301,7 +301,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo_AnimLover" width="1160" height="1061.3333740234375"/>
+        <image name="Logo_AnimLover" width="341.33334350585938" height="341.33334350585938"/>
         <image name="book.circle.fill" catalog="system" width="64" height="60"/>
         <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="envelope.circle.fill" catalog="system" width="64" height="60"/>

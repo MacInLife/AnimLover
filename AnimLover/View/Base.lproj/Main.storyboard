@@ -82,7 +82,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="ALWhiteGrey"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LmP-ql-DJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hg-As-5AM"/>
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="ALWhiteGrey"/>
                         <viewLayoutGuide key="safeArea" id="5JE-Na-W6N"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="envelope.circle.fill" catalog="system" selectedImage="envelope.open.fill" id="zVt-rv-ooT"/>
@@ -196,7 +196,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="backgroundColor" name="ALWhiteGrey"/>
                         <constraints>
                             <constraint firstItem="5n3-7v-7i7" firstAttribute="top" secondItem="EYN-rG-9nM" secondAttribute="top" constant="33" id="4r4-zx-F51"/>
                             <constraint firstItem="q4t-N5-nZx" firstAttribute="leading" secondItem="EYN-rG-9nM" secondAttribute="leading" id="6O1-uX-RVO"/>
@@ -251,7 +251,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" name="ALWhiteGrey"/>
                         <viewLayoutGuide key="safeArea" id="hlN-6s-iOu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Crédits" image="book.circle.fill" catalog="system" selectedImage="book.fill" id="f51-6p-fNb"/>
@@ -310,6 +310,9 @@
         <image name="star.fill" catalog="system" width="64" height="58"/>
         <namedColor name="ALBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ALWhiteGrey">
+            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

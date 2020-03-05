@@ -11,6 +11,9 @@ import UIKit
 class DetailViewController: UIViewController {
     var movies: Movie!
   
+    @IBAction func back(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseYearLabel: UILabel!

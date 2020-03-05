@@ -20,6 +20,7 @@
 		04C305CE238FDEB30040190A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CC238FDEB30040190A /* Main.storyboard */; };
 		04C305D0238FDEBB0040190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CF238FDEBB0040190A /* Assets.xcassets */; };
 		04C305D3238FDEBB0040190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305D1238FDEBB0040190A /* LaunchScreen.storyboard */; };
+		04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */; };
 		04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */; };
 		04F4E63C23C717ED009B0695 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E63B23C717ED009B0695 /* Choice.swift */; };
 		F90BCD404A34A354FE7647B7 /* Pods_AnimLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */; };
@@ -53,6 +54,7 @@
 		04C305CF238FDEBB0040190A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C305D2238FDEBB0040190A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C305D4238FDEBB0040190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		04F4E63B23C717ED009B0695 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		44705F93D68BD7DB8804C2B5 /* Pods-AnimLover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimLover.release.xcconfig"; path = "Target Support Files/Pods-AnimLover/Pods-AnimLover.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				04C305CC238FDEB30040190A /* Main.storyboard */,
 				0461706D23D993820094C823 /* PosterView.swift */,
+				04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			files = (
 				04F4E63C23C717ED009B0695 /* Choice.swift in Sources */,
 				0461707023D99ED30094C823 /* Colors.swift in Sources */,
+				04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */,
 				04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */,
 				0400228023F5502400AACA22 /* CreditsViewController.swift in Sources */,
 				04C305CB238FDEB30040190A /* ViewController.swift in Sources */,

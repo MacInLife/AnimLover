@@ -37,12 +37,16 @@ extension ResultViewController: UITableViewDataSource {
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
          return movies.count
      }
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
-         let movie = movies[indexPath.row]
-        
-        
-         cell.textLabel?.text = movie.title
-         return cell
-     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath) as? MovieTableViewCell else {
+            return UITableViewCell()
+        }
+
+        let movie = movies[indexPath.row]
+
+        cell.setUp(with: movie)
+
+        return cell
+    }
  }

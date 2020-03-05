@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6b-C7-ECs">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -14,11 +14,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMp-pi-DwF" userLabel="Poster View" customClass="PosterView" customModule="AnimLover" customModuleProvider="target">
-                                <rect key="frame" x="52.666666666666657" y="319" width="309" height="483"/>
+                                <rect key="frame" x="33" y="124" width="309" height="483"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Jx-Oj-RfO">
                                         <rect key="frame" x="0.0" y="0.0" width="309" height="483"/>
@@ -69,20 +69,20 @@
                                 </connections>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="LmP-ql-DJc">
-                                <rect key="frame" x="162" y="64" width="90" height="90"/>
+                                <rect key="frame" x="142.5" y="20" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="DxZ-W4-pBZ"/>
                                     <constraint firstAttribute="width" constant="90" id="gR7-6N-E3B"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe the poster to the left or right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-Px-7dq">
-                                <rect key="frame" x="20" y="821" width="374" height="21"/>
+                                <rect key="frame" x="20" y="626" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="ALWhiteGrey"/>
+                        <color key="backgroundColor" name="ALWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LmP-ql-DJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hg-As-5AM"/>
@@ -115,7 +115,7 @@
             <objects>
                 <viewController id="2pS-nW-xc1" customClass="ContactViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QxR-Iz-bDo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUr-vb-3ox">
@@ -138,7 +138,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="ALWhiteGrey"/>
+                        <color key="backgroundColor" name="ALWhite"/>
                         <viewLayoutGuide key="safeArea" id="5JE-Na-W6N"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Contact" image="envelope.circle.fill" catalog="system" selectedImage="envelope.open.fill" id="zVt-rv-ooT"/>
@@ -152,27 +152,63 @@
             <objects>
                 <viewController id="lM2-16-8T9" customClass="ResultViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jnq-3i-T8N">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-7v-7i7">
-                                <rect key="frame" x="162" y="77" width="90" height="90"/>
+                                <rect key="frame" x="142.5" y="33" width="90" height="90"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="6Hv-v7-eXI"/>
                                     <constraint firstAttribute="height" constant="90" id="kFy-RP-sqS"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-N5-nZx">
-                                <rect key="frame" x="0.0" y="250" width="414" height="533"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-N5-nZx">
+                                <rect key="frame" x="0.0" y="206" width="375" height="382"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="ERr-YS-RrU">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" id="ERr-YS-RrU" customClass="MovieTableViewCell" customModule="AnimLover" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ERr-YS-RrU" id="5m7-fq-Fxp">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Shb-qN-MeH">
+                                                    <rect key="frame" x="15" y="11" width="42" height="58"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="58" id="MFE-mU-CG0"/>
+                                                        <constraint firstAttribute="width" constant="42" id="Mh3-K3-AVW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Année" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2t1-JO-9dM">
+                                                    <rect key="frame" x="72" y="48" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLA-5V-kfZ">
+                                                    <rect key="frame" x="72" y="12" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Shb-qN-MeH" firstAttribute="leading" secondItem="5m7-fq-Fxp" secondAttribute="leadingMargin" id="54S-uY-SQ1"/>
+                                                <constraint firstItem="Shb-qN-MeH" firstAttribute="centerY" secondItem="5m7-fq-Fxp" secondAttribute="centerY" id="CCZ-sl-yAW"/>
+                                                <constraint firstItem="2t1-JO-9dM" firstAttribute="top" secondItem="qLA-5V-kfZ" secondAttribute="bottom" constant="15" id="O3Q-gX-D17"/>
+                                                <constraint firstItem="qLA-5V-kfZ" firstAttribute="leading" secondItem="Shb-qN-MeH" secondAttribute="trailing" constant="15" id="S4T-jR-qfK"/>
+                                                <constraint firstItem="qLA-5V-kfZ" firstAttribute="leading" secondItem="Shb-qN-MeH" secondAttribute="trailing" constant="15" id="Vxt-MC-kn1"/>
+                                                <constraint firstItem="2t1-JO-9dM" firstAttribute="leading" secondItem="Shb-qN-MeH" secondAttribute="trailing" constant="15" id="bTH-98-3tG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="2t1-JO-9dM" secondAttribute="bottom" id="cFO-Fd-7g0"/>
+                                                <constraint firstItem="2t1-JO-9dM" firstAttribute="top" secondItem="qLA-5V-kfZ" secondAttribute="bottom" constant="15" id="czH-Oo-tlt"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="Shb-qN-MeH" id="QJR-SR-vR3"/>
+                                            <outlet property="releaseYearLabel" destination="2t1-JO-9dM" id="d4u-qm-neW"/>
+                                            <outlet property="titleLabel" destination="qLA-5V-kfZ" id="ARw-gq-65b"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -180,7 +216,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-wJ-W1g">
-                                <rect key="frame" x="0.0" y="783" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="588" width="375" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kBb-i2-SbR"/>
@@ -190,13 +226,13 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes Favoris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOl-m6-OOW">
-                                <rect key="frame" x="162" y="197" width="91" height="21"/>
+                                <rect key="frame" x="162" y="153" width="52" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="ALWhiteGrey"/>
+                        <color key="backgroundColor" name="ALWhite"/>
                         <constraints>
                             <constraint firstItem="5n3-7v-7i7" firstAttribute="top" secondItem="EYN-rG-9nM" secondAttribute="top" constant="33" id="4r4-zx-F51"/>
                             <constraint firstItem="q4t-N5-nZx" firstAttribute="leading" secondItem="EYN-rG-9nM" secondAttribute="leading" id="6O1-uX-RVO"/>
@@ -220,14 +256,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O1i-NV-kaj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3969.5652173913045" y="77.678571428571431"/>
+            <point key="canvasLocation" x="3968.8000000000002" y="76.911544227886068"/>
         </scene>
         <!--Crédits-->
         <scene sceneID="BHQ-tZ-c3K">
             <objects>
                 <viewController id="ZkG-HI-ywa" customClass="CreditsViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rEC-ea-4MA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crédits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXq-5z-ZA3">
@@ -251,7 +287,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" name="ALWhiteGrey"/>
+                        <color key="backgroundColor" name="ALWhite"/>
                         <viewLayoutGuide key="safeArea" id="hlN-6s-iOu"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Crédits" image="book.circle.fill" catalog="system" selectedImage="book.fill" id="f51-6p-fNb"/>
@@ -301,7 +337,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo_AnimLover" width="341.33334350585938" height="341.33334350585938"/>
+        <image name="Logo_AnimLover" width="256" height="256"/>
         <image name="book.circle.fill" catalog="system" width="64" height="60"/>
         <image name="book.fill" catalog="system" width="64" height="50"/>
         <image name="envelope.circle.fill" catalog="system" width="64" height="60"/>
@@ -311,8 +347,8 @@
         <namedColor name="ALBlack">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="ALWhiteGrey">
-            <color red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="ALWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

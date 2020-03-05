@@ -83,7 +83,7 @@ class MovieService {
                 let title = movie["title"].stringValue
                 let posterPath = movie["poster_path"].stringValue
                 let id = movie["id"].stringValue
-                let description = movie["description"].stringValue
+                let description = movie["overview"].stringValue
                 let releaseDate = movie["release_date"].stringValue
                 let releaseYear = "(\(releaseDate.split(separator: "-")[0]))" //"2019-01-17" devient ["2019", "01", "17"] > [0] = premiere chaine => "(2019)"
                 

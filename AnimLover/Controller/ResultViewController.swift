@@ -10,6 +10,8 @@ import UIKit
 
 class ResultViewController: UIViewController {
     var movies: [Movie]!
+    var selectedMovie: Movie?
+    
     @IBOutlet weak var TableView: UITableView!
     
     @IBAction func restart(_ sender: Any) {
@@ -17,7 +19,7 @@ class ResultViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       //  TableView.delegate = self
+        TableView.delegate = self
         //print(movies)
         //print()
         // Do any additional setup after loading the view.
@@ -28,17 +30,15 @@ class ResultViewController: UIViewController {
            TableView.allowsSelection = true
        }
     
- 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+       guard segue.identifier == "toDetail", let selectedMovie = self.selectedMovie else { return }
 
+       let detailVC = segue.destination as! DetailViewController
+       detailVC.movies = selectedMovie
+
+   }
+ 
+ 
 }
 extension ResultViewController: UITableViewDataSource {
      func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,4 +59,21 @@ extension ResultViewController: UITableViewDataSource {
 
         return cell
     }
+
  }
+extension ResultViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            print("DELETE")
+          //  genreMovies.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("SELECT")
+        
+        self.selectedMovie = movies[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: nil)
+    }
+    
+}

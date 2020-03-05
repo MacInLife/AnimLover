@@ -40,6 +40,8 @@ extension ResultViewController: UITableViewDataSource {
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
          let movie = movies[indexPath.row]
+        
+        
          cell.textLabel?.text = movie.title
          return cell
      }

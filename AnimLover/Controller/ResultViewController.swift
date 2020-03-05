@@ -11,12 +11,22 @@ import UIKit
 class ResultViewController: UIViewController {
     var movies: [Movie]!
     @IBOutlet weak var TableView: UITableView!
+    
+    @IBAction func restart(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+       //  TableView.delegate = self
         //print(movies)
         //print()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           TableView.reloadData()
+           TableView.allowsSelection = true
+       }
     
  
     /*

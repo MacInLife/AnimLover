@@ -51,6 +51,9 @@ class ViewController: UIViewController {
         
         choice.start()
     }
+    override func viewWillAppear(_ animated: Bool) {
+          choice.start()
+      }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "toResult" else { return }

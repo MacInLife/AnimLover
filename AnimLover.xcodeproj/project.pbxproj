@@ -20,6 +20,7 @@
 		04C305CE238FDEB30040190A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CC238FDEB30040190A /* Main.storyboard */; };
 		04C305D0238FDEBB0040190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CF238FDEBB0040190A /* Assets.xcassets */; };
 		04C305D3238FDEBB0040190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305D1238FDEBB0040190A /* LaunchScreen.storyboard */; };
+		04CFF9F224110C310013C7CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF9F124110C310013C7CD /* DetailViewController.swift */; };
 		04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */; };
 		04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */; };
 		04F4E63C23C717ED009B0695 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E63B23C717ED009B0695 /* Choice.swift */; };
@@ -54,6 +55,7 @@
 		04C305CF238FDEBB0040190A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04C305D2238FDEBB0040190A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04C305D4238FDEBB0040190A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CFF9F124110C310013C7CD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		04F4E63B23C717ED009B0695 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */,
 				0400227D23F536D600AACA22 /* ContactViewController.swift */,
 				0400227F23F5502400AACA22 /* CreditsViewController.swift */,
+				04CFF9F124110C310013C7CD /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04CFF9F224110C310013C7CD /* DetailViewController.swift in Sources */,
 				04F4E63C23C717ED009B0695 /* Choice.swift in Sources */,
 				0461707023D99ED30094C823 /* Colors.swift in Sources */,
 				04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */,
@@ -548,6 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29H6X27A9A;
 				INFOPLIST_FILE = "AnimLover/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,7 +560,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.macoco.AnimLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -567,6 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29H6X27A9A;
 				INFOPLIST_FILE = "AnimLover/Supporting files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -574,7 +580,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fr.macoco.AnimLover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

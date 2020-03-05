@@ -440,11 +440,18 @@
                                     <constraint firstItem="6Ux-8o-ym3" firstAttribute="leading" secondItem="GIo-vL-aH1" secondAttribute="leading" constant="20" id="sS5-qr-maP"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-Gv-9BZ">
-                                <rect key="frame" x="26" y="68" width="29" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKA-Gv-9BZ">
+                                <rect key="frame" x="40" y="64" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1Ek-R2-RWr"/>
+                                    <constraint firstAttribute="height" constant="30" id="oxT-nO-7sq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="tintColor" name="ALGrey"/>
-                                <state key="normal" title="Button" image="arrow.left" catalog="system"/>
+                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                <state key="normal" title="Button" image="arrow.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                </state>
                                 <connections>
                                     <action selector="back:" destination="kte-OG-DvB" eventType="touchUpInside" id="knT-by-3Gl"/>
                                 </connections>
@@ -456,6 +463,8 @@
                             <constraint firstItem="GIo-vL-aH1" firstAttribute="centerX" secondItem="CXF-xn-wHH" secondAttribute="centerX" id="CUe-KW-VpN"/>
                             <constraint firstItem="00D-kb-zpp" firstAttribute="top" secondItem="asv-tG-VNz" secondAttribute="top" constant="64" id="F8w-cK-1hA"/>
                             <constraint firstItem="00D-kb-zpp" firstAttribute="centerX" secondItem="CXF-xn-wHH" secondAttribute="centerX" id="H8r-ou-m2l"/>
+                            <constraint firstItem="iKA-Gv-9BZ" firstAttribute="top" secondItem="asv-tG-VNz" secondAttribute="top" constant="64" id="TfH-VE-slA"/>
+                            <constraint firstItem="iKA-Gv-9BZ" firstAttribute="leading" secondItem="asv-tG-VNz" secondAttribute="leading" constant="40" id="aez-sd-Hdr"/>
                             <constraint firstItem="asv-tG-VNz" firstAttribute="bottom" secondItem="GIo-vL-aH1" secondAttribute="bottom" constant="20" id="bvL-sb-IuD"/>
                             <constraint firstItem="asv-tG-VNz" firstAttribute="trailing" secondItem="GIo-vL-aH1" secondAttribute="trailing" constant="20" id="d1p-UW-x1Z"/>
                             <constraint firstItem="GIo-vL-aH1" firstAttribute="top" secondItem="00D-kb-zpp" secondAttribute="bottom" constant="20" id="ivJ-o3-mcB"/>

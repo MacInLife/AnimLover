@@ -97,6 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lvc-pr-ymr"/>
                     <connections>
+                        <outlet property="LabelSwipe" destination="tGX-Px-7dq" id="tlz-1U-3ab"/>
                         <outlet property="posterView" destination="cMp-pi-DwF" id="iMN-US-ixx"/>
                         <segue destination="iSN-aC-2Eh" kind="show" identifier="toResult" id="naO-G6-RVK"/>
                     </connections>

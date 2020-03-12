@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var posterView: PosterView!
+    @IBOutlet weak var LabelSwipe: UILabel!
     
 //    @IBAction func dragPosterView(_ sender: UIPanGestureRecognizer) {
 //        switch sender.state {
@@ -54,6 +55,8 @@ class ViewController: UIViewController {
         //choice.start()
     }
     override func viewWillAppear(_ animated: Bool) {
+        self.posterView.isHidden = false
+        self.LabelSwipe.isHidden = false
           choice.start()
       }
     
@@ -74,6 +77,8 @@ class ViewController: UIViewController {
         posterView.poster = choice.currentMovie.poster
         posterView.title = choice.currentMovie.title
         posterView.year = choice.currentMovie.releaseYear
+        self.posterView.isHidden = false
+        self.LabelSwipe.isHidden = false
     }
     
     @objc func likedMoviesLoaded(_ notification: NSNotification) {
@@ -89,6 +94,8 @@ class ViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
     @objc func presentUndefinedAlert() {
+        self.posterView.isHidden = true
+        self.LabelSwipe.isHidden = true
         let alertVC = UIAlertController(title: "Erreur", message: "Erreur indéterminée.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
             self.choice.start()
@@ -96,6 +103,8 @@ class ViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
     @objc func presentNoMovieSelectedAlert() {
+        self.posterView.isHidden = true
+        self.LabelSwipe.isHidden = true
         let alertVC = UIAlertController(title: "Aucune sélection", message: "Vous n’avez sélectionné aucun film.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { (action) in
             self.choice.start()
@@ -103,6 +112,8 @@ class ViewController: UIViewController {
         present(alertVC, animated: true, completion: nil)
     }
     @objc func presentAlert(about notification: Notification) {
+        self.posterView.isHidden = true
+        self.LabelSwipe.isHidden = true
         print("ALERT ABOUT")
         guard let title = notification.userInfo?["title"] as? String,
             let message = notification.userInfo?["message"] as? String else {

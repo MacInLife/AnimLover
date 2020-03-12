@@ -38,12 +38,16 @@ class MovieService {
     }
     
 //  - Remplacer le nom de la fermeture par la nôtre
-    func getDiscovernMovies(completion: @escaping (MovieError?, [Movie]?) -> Void) {
+    func getDiscoverMovies(completion: @escaping (MovieError?, [Movie]?) -> Void) {
         let task = URLSession.shared.dataTask(with: discoverUrl) { (data, response, error) in
+//            DispatchQueue.main.async {
+//
+//            }
 //            Traiter error - Vérifie que error vaut nil
             if let error = error as? URLError {
                 if error.code == URLError.Code.notConnectedToInternet {
                     print("Erreur car pas de connexion à internet !")
+                    
                     completion(MovieError.connection, nil)
                     return
                 } else {

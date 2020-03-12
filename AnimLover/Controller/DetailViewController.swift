@@ -11,9 +11,7 @@ import UIKit
 class DetailViewController: UIViewController {
     var movies: Movie!
   
-    @IBAction func back(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
+  
     @IBOutlet weak var posterImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var releaseYearLabel: UILabel!
@@ -29,9 +27,14 @@ class DetailViewController: UIViewController {
         print(movies.description)
         
         posterImageView.image = UIImage(data: movies.poster)
-              titleLabel.text = movies.title
-              releaseYearLabel.text = movies.releaseYear
-            descriptionLabel.text = movies.description
+        titleLabel.text = movies.title
+        releaseYearLabel.text = movies.releaseYear
+        descriptionLabel.text = movies.description
+        
+        navigationController?.setNavigationBarHidden(false, animated: true)
      }
+    override func viewWillDisappear(_ animated: Bool){
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }//Life cycle hook (fonction qui serve au cycle de vie de la vue)
     
 }

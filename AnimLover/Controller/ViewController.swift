@@ -48,8 +48,10 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector:
             #selector(likedMoviesLoaded( _:)), name:
             Notification.Name.likedMoviesLoaded, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(presentNoMovieSelectedAlert), name: .noMovieSelected, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(presentAlert(about:)), name: .apiError, object: nil)
         
-        choice.start()
+        //choice.start()
     }
     override func viewWillAppear(_ animated: Bool) {
           choice.start()
@@ -79,6 +81,39 @@ class ViewController: UIViewController {
         likedMovies = movies
         performSegue(withIdentifier: "toResult", sender: nil)
       }
+    @objc func presentConnectionAlert() {
+        let alertVC = UIAlertController(title: "Pas de connexion internet", message: "Merci de vérifier votre connexion.", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
+            self.choice.start()
+        }))
+        present(alertVC, animated: true, completion: nil)
+    }
+    @objc func presentUndefinedAlert() {
+        let alertVC = UIAlertController(title: "Erreur", message: "Erreur indéterminée.", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
+            self.choice.start()
+        }))
+        present(alertVC, animated: true, completion: nil)
+    }
+    @objc func presentNoMovieSelectedAlert() {
+        let alertVC = UIAlertController(title: "Aucune sélection", message: "Vous n’avez sélectionné aucun film.", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { (action) in
+            self.choice.start()
+        }))
+        present(alertVC, animated: true, completion: nil)
+    }
+    @objc func presentAlert(about notification: Notification) {
+        print("ALERT ABOUT")
+        guard let title = notification.userInfo?["title"] as? String,
+            let message = notification.userInfo?["message"] as? String else {
+            return
+        }
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { (action) in
+            self.choice.start()
+        }))
+        present(alertVC, animated: true, completion: nil)
+    }
     
     private func transformPosterViewWith(gesture: UIPanGestureRecognizer){
     // 1.0 Création du déplacement

@@ -77,6 +77,7 @@ class MovieService {
                 completion(MovieError.data, nil)
                 return
             }
+            print("data", JSON(data))
 //              Récupérer la propriété "results" du JSON
             let results = JSON(data)["results"]
 //              Créer un tableau vide

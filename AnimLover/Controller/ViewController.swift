@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var posterView: PosterView!
     @IBOutlet weak var LabelSwipe: UILabel!
+    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
     
 //    @IBAction func dragPosterView(_ sender: UIPanGestureRecognizer) {
 //        switch sender.state {
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         self.posterView.isHidden = false
         self.LabelSwipe.isHidden = false
+        self.ActivityIndicator.isHidden = false
           choice.start()
       }
     
@@ -79,6 +81,7 @@ class ViewController: UIViewController {
         posterView.year = choice.currentMovie.releaseYear
         self.posterView.isHidden = false
         self.LabelSwipe.isHidden = false
+        self.ActivityIndicator.isHidden = true
     }
     
     @objc func likedMoviesLoaded(_ notification: NSNotification) {

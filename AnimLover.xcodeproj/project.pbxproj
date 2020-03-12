@@ -21,13 +21,11 @@
 		04C305D0238FDEBB0040190A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C305CF238FDEBB0040190A /* Assets.xcassets */; };
 		04C305D3238FDEBB0040190A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C305D1238FDEBB0040190A /* LaunchScreen.storyboard */; };
 		04CFF9F224110C310013C7CD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CFF9F124110C310013C7CD /* DetailViewController.swift */; };
-		04DA5DBB2416E10900D15FA8 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F50D432416A124007C599B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DE32BE2410F6EC00C02003 /* MovieTableViewCell.swift */; };
 		04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F27E9E23E32E1D00525EE7 /* ResultViewController.swift */; };
 		04F4E63C23C717ED009B0695 /* Choice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F4E63B23C717ED009B0695 /* Choice.swift */; };
-		04F50D4024169C80007C599B /* Pods_AnimLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		04F50D4024169C80007C599B /* Pods_AnimLover.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		04F50D4124169C80007C599B /* Pods_AnimLover.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		04F50D472416A27B007C599B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04F50D462416A27B007C599B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +76,7 @@
 		04F4E63B23C717ED009B0695 /* Choice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Choice.swift; sourceTree = "<group>"; };
 		04F50D432416A124007C599B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F50D462416A27B007C599B /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04FCA65B241A4D3400F6A2A4 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E1C82407655EC4DBD4133C /* Pods-AnimLover.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimLover.debug.xcconfig"; path = "Target Support Files/Pods-AnimLover/Pods-AnimLover.debug.xcconfig"; sourceTree = "<group>"; };
 		48C8A2A052698C7C6909E8DF /* Pods-AnimLover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimLover.release.xcconfig"; path = "Target Support Files/Pods-AnimLover/Pods-AnimLover.release.xcconfig"; sourceTree = "<group>"; };
 		EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimLover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F50D472416A27B007C599B /* SwiftyJSON.framework in Frameworks */,
 				04F50D4024169C80007C599B /* Pods_AnimLover.framework in Frameworks */,
-				04DA5DBB2416E10900D15FA8 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +198,7 @@
 		6FF9A8DC16706234393106F1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				04FCA65B241A4D3400F6A2A4 /* SwiftyJSON.framework */,
 				04F50D462416A27B007C599B /* SwiftyJSON.framework */,
 				04F50D432416A124007C599B /* SwiftyJSON.framework */,
 				EDFE1A59B90A91D8C278833D /* Pods_AnimLover.framework */,

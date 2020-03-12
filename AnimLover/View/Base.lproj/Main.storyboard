@@ -81,6 +81,9 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="b5E-bf-pHn">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" name="ALWhite"/>
                         <gestureRecognizers/>
@@ -88,8 +91,10 @@
                             <constraint firstItem="LmP-ql-DJc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hg-As-5AM"/>
                             <constraint firstItem="LmP-ql-DJc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="8HZ-Wa-tW5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tGX-Px-7dq" secondAttribute="bottom" constant="20" id="BDk-6D-x5a"/>
+                            <constraint firstItem="b5E-bf-pHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DDG-sr-Le4"/>
                             <constraint firstItem="cMp-pi-DwF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-60" id="Emm-rI-YFc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGX-Px-7dq" secondAttribute="trailing" constant="20" id="SQF-IM-8SO"/>
+                            <constraint firstItem="b5E-bf-pHn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="gZ0-kP-zeI"/>
                             <constraint firstItem="cMp-pi-DwF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vLG-qb-0hl"/>
                             <constraint firstItem="tGX-Px-7dq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zgB-hQ-xBg"/>
                         </constraints>
@@ -97,6 +102,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="lvc-pr-ymr"/>
                     <connections>
+                        <outlet property="ActivityIndicator" destination="b5E-bf-pHn" id="UIc-VX-s7g"/>
                         <outlet property="LabelSwipe" destination="tGX-Px-7dq" id="tlz-1U-3ab"/>
                         <outlet property="posterView" destination="cMp-pi-DwF" id="iMN-US-ixx"/>
                         <segue destination="iSN-aC-2Eh" kind="show" identifier="toResult" id="naO-G6-RVK"/>

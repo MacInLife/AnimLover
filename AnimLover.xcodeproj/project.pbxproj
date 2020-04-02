@@ -12,6 +12,7 @@
 		044D1AC423EBFE90000A3679 /* MovieTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044D1AC323EBFE90000A3679 /* MovieTestCase.swift */; };
 		0461706E23D993820094C823 /* PosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461706D23D993820094C823 /* PosterView.swift */; };
 		0461707023D99ED30094C823 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0461706F23D99ED30094C823 /* Colors.swift */; };
+		04A537012435E4D9003FA6EF /* LogoAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A537002435E4D9003FA6EF /* LogoAnimationViewController.swift */; };
 		04AE906523A2316600D80040 /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE906423A2316600D80040 /* MovieService.swift */; };
 		04AE906723A23DF400D80040 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AE906623A23DF400D80040 /* Movie.swift */; };
 		04C305C7238FDEB30040190A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C305C6238FDEB30040190A /* AppDelegate.swift */; };
@@ -60,6 +61,7 @@
 		044D1AC323EBFE90000A3679 /* MovieTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestCase.swift; sourceTree = "<group>"; };
 		0461706D23D993820094C823 /* PosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterView.swift; sourceTree = "<group>"; };
 		0461706F23D99ED30094C823 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		04A537002435E4D9003FA6EF /* LogoAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAnimationViewController.swift; sourceTree = "<group>"; };
 		04AE906423A2316600D80040 /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
 		04AE906623A23DF400D80040 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		04C305C3238FDEB30040190A /* AnimLover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimLover.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				0400227D23F536D600AACA22 /* ContactViewController.swift */,
 				0400227F23F5502400AACA22 /* CreditsViewController.swift */,
 				04CFF9F124110C310013C7CD /* DetailViewController.swift */,
+				04A537002435E4D9003FA6EF /* LogoAnimationViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 				04F4E63C23C717ED009B0695 /* Choice.swift in Sources */,
 				0461707023D99ED30094C823 /* Colors.swift in Sources */,
 				04DE32BF2410F6EC00C02003 /* MovieTableViewCell.swift in Sources */,
+				04A537012435E4D9003FA6EF /* LogoAnimationViewController.swift in Sources */,
 				04F27E9F23E32E1D00525EE7 /* ResultViewController.swift in Sources */,
 				0400228023F5502400AACA22 /* CreditsViewController.swift in Sources */,
 				04C305CB238FDEB30040190A /* ViewController.swift in Sources */,

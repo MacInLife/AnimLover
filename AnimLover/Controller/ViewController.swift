@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var posterView: PosterView!
-    @IBOutlet weak var LabelSwipe: UILabel!
-    @IBOutlet weak var ActivityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var labelSwipe: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
 //    @IBAction func dragPosterView(_ sender: UIPanGestureRecognizer) {
 //        switch sender.state {
@@ -57,8 +57,8 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         self.posterView.isHidden = false
-        self.LabelSwipe.isHidden = false
-        self.ActivityIndicator.isHidden = false
+        self.labelSwipe.isHidden = false
+        self.activityIndicator.isHidden = false
           choice.start()
       }
     
@@ -80,8 +80,8 @@ class ViewController: UIViewController {
         posterView.title = choice.currentMovie.title
         posterView.year = choice.currentMovie.releaseYear
         self.posterView.isHidden = false
-        self.LabelSwipe.isHidden = false
-        self.ActivityIndicator.isHidden = true
+        self.labelSwipe.isHidden = false
+        self.activityIndicator.isHidden = true
     }
     
     @objc func likedMoviesLoaded(_ notification: NSNotification) {
@@ -93,12 +93,17 @@ class ViewController: UIViewController {
         let alertVC = UIAlertController(title: "Pas de connexion internet", message: "Merci de vérifier votre connexion.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
             self.choice.start()
+//            UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: [], animations: {
+//                   // self.logoAnimation.transform = .identity
+//                }) { (success) in
+//                    self.choice.start()
+//                }
         }))
         present(alertVC, animated: true, completion: nil)
     }
     @objc func presentUndefinedAlert() {
         self.posterView.isHidden = true
-        self.LabelSwipe.isHidden = true
+        self.labelSwipe.isHidden = true
         let alertVC = UIAlertController(title: "Erreur", message: "Erreur indéterminée.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
             self.choice.start()
@@ -107,7 +112,7 @@ class ViewController: UIViewController {
     }
     @objc func presentNoMovieSelectedAlert() {
         self.posterView.isHidden = true
-        self.LabelSwipe.isHidden = true
+        self.labelSwipe.isHidden = true
         let alertVC = UIAlertController(title: "Aucune sélection", message: "Vous n’avez sélectionné aucun film.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { (action) in
             self.choice.start()
@@ -116,7 +121,7 @@ class ViewController: UIViewController {
     }
     @objc func presentAlert(about notification: Notification) {
         self.posterView.isHidden = true
-        self.LabelSwipe.isHidden = true
+        self.labelSwipe.isHidden = true
         print("ALERT ABOUT")
         guard let title = notification.userInfo?["title"] as? String,
             let message = notification.userInfo?["message"] as? String else {

@@ -9,18 +9,38 @@
 import UIKit
 
 class LogoAnimationViewController: UIViewController {
+    var movies: [Movie]!
+     var choice = Choice()
 
     @IBOutlet weak var logoAnimation: UIImageView!
+    @IBOutlet weak var backgroundGradientView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         shortLogoOpening()
         // Do any additional setup after loading the view.
+        
+           // Créer un calque de dégradé .
+            let gradientLayer = CAGradientLayer()
+                 // Régler la taille de la couche à être égale à la taille de l' écran.
+            gradientLayer.frame = view.bounds
+          //  Définir  un  tableau  de  couleurs Core  Graphics  (.cgColor) pour créer le dégradé. // Cet exemple utilise un Color Literal et un UIColor à partir des valeurs RVB .
+            gradientLayer.colors = [#colorLiteral(red: 0.4784313725, green: 0.5019607843, blue: 0.5843137255, alpha: 1).cgColor,#colorLiteral(red: 0.9647058824, green: 0.9647058824, blue: 0.9647058824, alpha: 1).cgColor ,#colorLiteral(red: 0.4784313725, green: 0.5019607843, blue: 0.5843137255, alpha: 1).cgColor]
+        //  Rastérisez  cette  couche statique  pour améliorer les performances de l' application .
+            gradientLayer.shouldRasterize = true
+           // Appliquer le gradient de la backgroundGradientView.
+            backgroundGradientView.layer.addSublayer(gradientLayer)
+        
+   //  Horizontal: de  gauche  à  droite.
+        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5) //  Côté gauche
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5) //  Côté droit
     }
+    override var shouldAutorotate: Bool {
+         return false
+     }
     
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            guard segue.identifier == "segueToChoice" else { return }
-        }
+   
     
     private func shortLogoOpening() {
         UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 1, options: [], animations: {

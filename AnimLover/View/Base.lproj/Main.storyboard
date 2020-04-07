@@ -17,6 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="8gM-Jz-OV4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ALWhite"/>
+                                <gestureRecognizers/>
+                                <viewLayoutGuide key="safeArea" id="dnf-gT-sJR"/>
+                            </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="b5E-bf-pHn">
                                 <rect key="frame" x="177.5" y="313.5" width="20" height="20"/>
                             </activityIndicatorView>
@@ -103,6 +110,7 @@
                     <navigationItem key="navigationItem" id="lvc-pr-ymr"/>
                     <connections>
                         <outlet property="activityIndicator" destination="b5E-bf-pHn" id="UIc-VX-s7g"/>
+                        <outlet property="backgroundGradientView" destination="8gM-Jz-OV4" id="WqS-ON-fha"/>
                         <outlet property="labelSwipe" destination="tGX-Px-7dq" id="tlz-1U-3ab"/>
                         <outlet property="posterView" destination="cMp-pi-DwF" id="iMN-US-ixx"/>
                         <segue destination="iSN-aC-2Eh" kind="show" identifier="toResult" id="naO-G6-RVK"/>
@@ -372,10 +380,16 @@
         <scene sceneID="3RQ-Ct-Q8l">
             <objects>
                 <viewController id="QPG-Ul-EGz" customClass="LogoAnimationViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mCu-2M-Tbf">
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="mCu-2M-Tbf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view autoresizesSubviews="NO" contentMode="scaleToFill" id="gfX-JV-D6B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ALWhite"/>
+                                <viewLayoutGuide key="safeArea" id="HeO-bX-rF9"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="gg1-G2-Oxs">
                                 <rect key="frame" x="123.5" y="269.5" width="128" height="128"/>
                                 <constraints>
@@ -392,6 +406,7 @@
                         <viewLayoutGuide key="safeArea" id="az5-Dr-FDc"/>
                     </view>
                     <connections>
+                        <outlet property="backgroundGradientView" destination="gfX-JV-D6B" id="eYE-Bo-U5M"/>
                         <outlet property="logoAnimation" destination="gg1-G2-Oxs" id="Jtb-tg-09Q"/>
                         <segue destination="u6b-C7-ECs" kind="show" identifier="segueToChoice" id="wH2-QR-ovc"/>
                     </connections>

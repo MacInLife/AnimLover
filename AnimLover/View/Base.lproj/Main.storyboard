@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QPG-Ul-EGz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6b-C7-ECs">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimLover" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="8gM-Jz-OV4">
@@ -25,10 +25,10 @@
                                 <viewLayoutGuide key="safeArea" id="dnf-gT-sJR"/>
                             </view>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="b5E-bf-pHn">
-                                <rect key="frame" x="177.5" y="313.5" width="20" height="20"/>
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                             </activityIndicatorView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMp-pi-DwF" userLabel="Poster View" customClass="PosterView" customModule="AnimLover" customModuleProvider="target">
-                                <rect key="frame" x="33" y="104" width="309" height="483"/>
+                                <rect key="frame" x="33" y="124" width="309" height="483"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Jx-Oj-RfO">
                                         <rect key="frame" x="0.0" y="0.0" width="309" height="483"/>
@@ -86,7 +86,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe the poster to the left or right" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tGX-Px-7dq">
-                                <rect key="frame" x="20" y="606" width="335" height="21"/>
+                                <rect key="frame" x="20" y="626" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -184,6 +184,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="jEw-Uh-N2M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ALWhite"/>
+                                <viewLayoutGuide key="safeArea" id="WRW-1E-jSP"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-7v-7i7">
                                 <rect key="frame" x="142.5" y="20" width="90" height="90"/>
                                 <constraints>
@@ -192,13 +198,13 @@
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q4t-N5-nZx">
-                                <rect key="frame" x="0.0" y="196" width="375" height="372"/>
-                                <color key="backgroundColor" name="ALWhite"/>
+                                <rect key="frame" x="0.0" y="196" width="375" height="392"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MovieCell" id="ERr-YS-RrU" customClass="MovieTableViewCell" customModule="AnimLover" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ERr-YS-RrU" id="5m7-fq-Fxp">
+                                        <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ERr-YS-RrU" id="5m7-fq-Fxp">
                                             <rect key="frame" x="0.0" y="0.0" width="349" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -246,7 +252,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ue-wJ-W1g">
-                                <rect key="frame" x="0.0" y="568" width="375" height="30"/>
+                                <rect key="frame" x="0.0" y="588" width="375" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="kBb-i2-SbR"/>
@@ -265,7 +271,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" name="ALWhite"/>
                         <constraints>
                             <constraint firstItem="5n3-7v-7i7" firstAttribute="top" secondItem="EYN-rG-9nM" secondAttribute="top" constant="20" id="4r4-zx-F51"/>
                             <constraint firstItem="q4t-N5-nZx" firstAttribute="leading" secondItem="EYN-rG-9nM" secondAttribute="leading" id="6O1-uX-RVO"/>
@@ -285,6 +290,7 @@
                     <tabBarItem key="tabBarItem" title="Favoris" image="star.circle.fill" catalog="system" selectedImage="star.fill" id="Ibe-S4-ano"/>
                     <connections>
                         <outlet property="TableView" destination="q4t-N5-nZx" id="tNu-dK-bOO"/>
+                        <outlet property="backgroundGradientView" destination="jEw-Uh-N2M" id="5Nf-q2-iJz"/>
                         <segue destination="kte-OG-DvB" kind="show" identifier="toDetail" id="1f5-bz-c4J"/>
                     </connections>
                 </viewController>
@@ -307,7 +313,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anim'Lover  développement &amp; webdesign  by MAC" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mxL-yU-Gga">
-                                <rect key="frame" x="40" y="497" width="295" height="61"/>
+                                <rect key="frame" x="40" y="517" width="295" height="61"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                 <color key="textColor" name="ALGrey"/>
                                 <nil key="highlightedColor"/>
@@ -405,15 +411,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="az5-Dr-FDc"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1iF-Kf-Qar"/>
                     <connections>
                         <outlet property="backgroundGradientView" destination="gfX-JV-D6B" id="eYE-Bo-U5M"/>
                         <outlet property="logoAnimation" destination="gg1-G2-Oxs" id="Jtb-tg-09Q"/>
-                        <segue destination="u6b-C7-ECs" kind="show" identifier="segueToChoice" id="wH2-QR-ovc"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segueToChoice" id="XAC-IU-YGH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kEl-rN-DLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="183" y="75"/>
+            <point key="canvasLocation" x="910" y="74"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S2H-Ut-den">
@@ -422,17 +429,16 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="BNK-Pc-MFn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="msI-km-yWg">
-                        <rect key="frame" x="0.0" y="-20" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="9pJ-pu-cba"/>
+                        <segue destination="QPG-Ul-EGz" kind="relationship" relationship="rootViewController" id="D0p-mC-Cza"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3yM-tY-Z0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1044.9275362318842" y="77.678571428571431"/>
+            <point key="canvasLocation" x="-57" y="75"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="1ea-mb-yWt">
@@ -442,6 +448,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" id="f6A-uU-cru">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" name="ALWhite"/>
+                                <viewLayoutGuide key="safeArea" id="sUO-VU-7CX"/>
+                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo_AnimLover" translatesAutoresizingMaskIntoConstraints="NO" id="00D-kb-zpp">
                                 <rect key="frame" x="142.5" y="64" width="90" height="90"/>
                                 <constraints>
@@ -450,7 +462,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIo-vL-aH1">
-                                <rect key="frame" x="20" y="174" width="335" height="453"/>
+                                <rect key="frame" x="20" y="174" width="335" height="473"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7h-jz-rTg">
                                         <rect key="frame" x="90.5" y="20" width="154" height="231"/>
@@ -478,7 +490,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="CkU-fV-ZRu" firstAttribute="leading" secondItem="GIo-vL-aH1" secondAttribute="leading" constant="20" id="0kv-nc-T7T"/>
                                     <constraint firstItem="CkU-fV-ZRu" firstAttribute="centerX" secondItem="GIo-vL-aH1" secondAttribute="centerX" id="8Yr-DP-Mok"/>
@@ -511,6 +523,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="F4V-U7-xv8"/>
                     <connections>
+                        <outlet property="backgroundGradientView" destination="f6A-uU-cru" id="ELe-R8-iFg"/>
                         <outlet property="descriptionLabel" destination="6Ux-8o-ym3" id="rjA-h2-7VT"/>
                         <outlet property="posterImageView" destination="X7h-jz-rTg" id="bpw-Tt-Pa1"/>
                         <outlet property="releaseYearLabel" destination="c3F-Ye-i1D" id="3uH-oF-7uG"/>

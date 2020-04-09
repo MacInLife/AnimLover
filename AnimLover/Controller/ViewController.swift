@@ -109,11 +109,6 @@ class ViewController: UIViewController {
         let alertVC = UIAlertController(title: "Pas de connexion internet", message: "Merci de vérifier votre connexion.", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "Recommencer", style: .default, handler: { action in
             self.choice.start()
-//            UIView.animate(withDuration: 0.6, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 2, options: [], animations: {
-//                   // self.logoAnimation.transform = .identity
-//                }) { (success) in
-//                    self.choice.start()
-//                }
         }))
         present(alertVC, animated: true, completion: nil)
     }

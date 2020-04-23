@@ -20,7 +20,8 @@ class MovieService {
 //  Avant --> private let discoverUrl = URL (string: "\(movieApi)/discover/movie?api_key=\(apiKey)&with_genre=16&region=FR")!
 //  Maintenant -->
     private var discoverUrl: URL {
-        return URL(string: "\(movieApi)/discover/movie?api_key=\(apiKey)&with_genre=16&region=FR")!
+        print(URL(string: "\(movieApi)/discover/movie?api_key=\(apiKey)&with_genres=16&region=FR")!)
+        return URL(string: "\(movieApi)/discover/movie?api_key=\(apiKey)&with_genres=16&region=FR")!
     }
 //  \(movieApi)/discover/movie?api_key=\(apiKey)&region=FR
     
